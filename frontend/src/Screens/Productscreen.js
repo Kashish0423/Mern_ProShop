@@ -23,7 +23,7 @@ const Productscreen = ({ match }) => {
     };
 
     fetchProduct();
-  }, []);
+  }, [match]);
 
   return (
     <>
