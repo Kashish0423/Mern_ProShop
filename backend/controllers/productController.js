@@ -13,8 +13,6 @@ const getProducts = asyncHandler(async (req, res) => {
 // @des Fetch single products
 // @ route GET /api/products/:id
 // @ Public
-// const getProductById = asyncHandler(async (req, res) => {
-//   const product = await Product.findById(req.params.id);
 
 const getProductById = asyncHandler(async (req, res) => {
   const product = await Product.findById(req.params.id);
