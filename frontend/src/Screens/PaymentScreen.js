@@ -27,7 +27,7 @@ const PaymentScreen = ({ history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(savePaymentMethod({ paymentMethod }));
+    dispatch(savePaymentMethod(paymentMethod));
 
     history.push("/placeorder");
   };
@@ -45,13 +45,13 @@ const PaymentScreen = ({ history }) => {
               type='radio'
               label='PayPal or Credit Card'
               id='PayPal'
-              name='PaymentMethod'
+              name='paymentMethod'
               value='PayPal'
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></FormCheck>
 
-            <FormCheck
+            {/* <FormCheck
               type='radio'
               label='Stripe'
               id='Stripe'
@@ -59,7 +59,7 @@ const PaymentScreen = ({ history }) => {
               value='Stripe'
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
-            ></FormCheck>
+            ></FormCheck> */}
           </Col>
         </FormGroup>
         <Button type='submit' variant='primary'>
