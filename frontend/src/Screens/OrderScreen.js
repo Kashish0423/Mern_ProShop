@@ -3,7 +3,6 @@ import axios from "axios";
 import { PayPalButton } from "react-paypal-button-v2";
 import { Link } from "react-router-dom";
 import {
-  Button,
   Row,
   Col,
   ListGroup,
@@ -93,9 +92,7 @@ const OrderScreen = ({ match }) => {
 
               <p>
                 <strong>Email:</strong>
-                <a href={`mailto:${order.user.email}`}>
-                  {order.user.email}
-                </a>{" "}
+                <a href={`mailto:${order.user.email}`}>{order.user.email}</a>
               </p>
               <p>
                 <strong> Address:</strong>
