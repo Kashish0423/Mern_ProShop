@@ -18,3 +18,24 @@ h2 {
 .rating span {
   margin: 0.1rem;
 }
+
+/* carousel */
+
+.carousel {
+  width: 900px;
+  height: 500px;
+  margin: auto;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+}
