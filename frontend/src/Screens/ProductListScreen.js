@@ -40,7 +40,7 @@ const ProductListScreen = ({ history, match }) => {
     if (!userInfo.isAdmin) {
       history.push("/login");
     }
-    console.log("sc", successCreate, "pc", productCreate);
+
     if (successCreate) {
       history.push(`/admin/product/${createdProduct._id}/edit`);
     } else {
