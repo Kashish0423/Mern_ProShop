@@ -101,6 +101,7 @@ const createProductReview = asyncHandler(async (req, res) => {
 
     if (alreadyReviewed) {
       res.status(400);
+      // res.json({ message: "Product already reviewed" });
       throw new Error("Product already reviewed");
     }
 
