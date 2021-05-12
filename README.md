@@ -95,3 +95,21 @@ jane@example.com (Customer)
 ```
 
 Snapshots of the project 👇
+
+Admin Post Login Screen
+<img src="Screenshots_proshop/Admin Post Login Screen.png" alt="Admin Post Login Screen">
+
+User Post Login Screen
+<img src="Screenshots_proshop/Post User Login Screen.png" alt="User Post Login Screen">
+
+Payment Using Paypal
+<img src="Screenshots_proshop/Payment Using Paypal.png" alt="Paypal Payment Screen">
+
+Product Pagination
+<img src="Screenshots_proshop/Product_pagination.png" alt="Product_pagination">
+
+Checkout Screen
+<img src="Screenshots_proshop/Checkout Screen.png" alt="Checkout Screen">
+
+Steps to Checkout an Order
+<img src="Screenshots_proshop/Steps to Checkout an Order.png" alt="Order Checkout Steps">
