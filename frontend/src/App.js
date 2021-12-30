@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import { Container } from "react-bootstrap";
 import HomeScreen from "./Screens/Homescreen";
 import ProductScreen from "./Screens/Productscreen";
@@ -18,6 +18,7 @@ import UserEditScreen from "./Screens/UserEditScreen";
 import ProductListScreen from "./Screens/ProductListScreen";
 import ProductEditScreen from "./Screens/ProductEditScreen";
 import OrderListScreen from "./Screens/OrderListScreen";
+import ContactUs from "./components/ContactUs/ContactUs";
 const App = () => {
   return (
     <Router>
@@ -54,6 +55,7 @@ const App = () => {
             path='/search/:keyword/page/:pageNumber'
             component={HomeScreen}
           />
+          <Route path='/contact-us' component={ContactUs} />
         </Container>
       </main>
       <Footer />

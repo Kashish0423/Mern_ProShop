@@ -20,7 +20,7 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>ProShop</Navbar.Brand>
+            <Navbar.Brand>Viscon</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -30,6 +30,16 @@ const Header = () => {
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i>Cart
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to='/services'>
+                <Nav.Link>
+                  <i className='fas fa-server'></i>Services
+                </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to='/contact-us'>
+                <Nav.Link>
+                  <i className='fas fa-id-card'></i>Contact-Us
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (
@@ -43,10 +53,25 @@ const Header = () => {
                 </NavDropdown>
               ) : (
                 <LinkContainer to='/login'>
-                  <Nav.Link>
+                  {/* <Nav.Link>
                     <i className='fas fa-user'></i>
                     Sign In
-                  </Nav.Link>
+                  </Nav.Link> */}
+                  <NavDropdown title='sign-in' id='username'>
+                    <LinkContainer to='/login'>
+                      <NavDropdown.Item>As Admin</NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to='/login'>
+                      <NavDropdown.Item>As Doctor</NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to='/login'>
+                      <NavDropdown.Item>As User</NavDropdown.Item>
+                    </LinkContainer>
+
+                    {/* <NavDropdown.Item onClick={logoutHandler}>
+                      Logout
+                    </NavDropdown.Item> */}
+                  </NavDropdown>
                 </LinkContainer>
               )}
 
